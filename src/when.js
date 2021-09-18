@@ -66,8 +66,6 @@ class WhenMock {
       this.nextCallMockId++
 
       this.fn.mockImplementation((...args) => {
-    
-
         for (let i = 0; i < this.callMocks.length; i++) {
           const { matchers, mockImplementation, expectCall, once, called } = this.callMocks[i]
 
